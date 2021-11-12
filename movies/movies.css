@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: black;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left:0; right:0;
+    padding:1rem 9%;
+    z-index: 1000;
+    color: #E5E5E5;    
+}
+.header .logo{
+    font-size: 2rem;
+    color: #ff0000;
+    font-weight: bold;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+#login-btn .btn{
+    margin-top: 0;
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#login-btn i{
+    display: none;
+    font-size: 2.5rem;
+}
+#menu-btn{
+    font-size: 2.5rem;
+    display: none;
+}
+.movie-container{
+    background-image: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.playbutton { 
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 800px;
+    font-size:60px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 30px 40px;
+    color: #fff;
+  box-shadow: 0 0 15px #d35400;
+  cursor: pointer;
+}
+
+.movie-content2{
+    position: absolute;
+    color: #fff;
+    margin-top: 260px;
+    margin-left: 50px;
+}
+.movie-content2 h1{
+    font-size: 70px;
+    letter-spacing: 30px;
+}
+.movie-content2 h4{
+    font-size: 20px;
+    letter-spacing: 9px;
+}
+.movie-content2 h5{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.movie-content2 .imdb h6{
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: #ff0000;
+    width: 13%;
+    padding: 7px;
+}
+.movie-content2 .imdb span{
+    background-color: #fff;
+    color: black;
+    padding: 2px;
+    border-radius: 3px;
+}
+.movie-content2 .genere{
+    margin-top: 20px;
+    
+}
+.movie-content2 .genere span{
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.movie-content2 p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.btn{
+    margin-top: 30px;
+}
+.btn a{
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+}
+.related-section{
+    margin-top: 80px;
+}
+.line{
+    margin-top: 5px;
+    height: 3px;
+    width: 7%;
+    background-color: #ff0000;
+    margin-left: 47px;
+
+}
+.related-section h1{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 47px;
+}
+.inside-related{
+    display: flex;
+    padding: 30px 60px;
+}
+.related-content img{
+    height: 280px;
+    cursor: pointer;
+    padding: 6px;
+    transition: all 500ms ease-in-out;
+}
+.related-content img:hover{
+    transform: scale(1.1);
+}
+.footer{
+    border-top: 0.6px solid rgb(65, 65, 65);
+    margin-top: 100px;
+}
+.iniside-footer{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo1 a{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ff0000;
+}
+.socials i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer-content{
+    padding: 10px 40px;
+}
+.footer-content p{
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(131, 130, 130);
+}
+.footer-content h3{
+    color: rgb(131, 130, 130);
+}
+.footer-content ul li{
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.footer-content ul li a{
+    color: rgb(51, 51, 51);
+}
+.app img{
+    height: 40px;
+}
+.copyright {
+    color: rgb(131, 130, 130);
+    margin-bottom: 15px;
+  
+}
+.copyright p{
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+.copyright span{
+    color: rgb(212, 209, 209);
+}
+.copyright-line{
+    border-top: 1px dotted rgb(131, 130, 130);
+   margin-left: 90px;
+   margin-right: 90px;
+}
+
+@media (max-width:858px)
+{
+    .logo{
+        color: #fff;
+    }
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-btn.fa-times{
+        transform:rotate(180deg);
+    }
+
+    #login-btn .btn{
+        display: none;
+    }
+
+    #login-btn i{
+        display: block;
+        font-size: 30px;
+    }
+    .header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background:#5a5757 ;
+        color: black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a{
+        margin:2rem;
+        display: block;
+        font-size: 2rem;
+        color: black;
+    }
+    .movie-content2 h1{
+        font-size: 40px;
+        letter-spacing: 20px;
+    }
+    .movie-content2 h4{
+        letter-spacing: 4px;
+    }
+    .movie-content2 .imdb h6{
+        width: 26%;
+        padding: 3px;
+    }
+    .movie-content2 .imdb span{
+        font-size: 12px;
+    }
+    .movie-container{
+        background-image: url(images/1.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+    }
+    .movie-content2{  
+    margin-top: 220px;
+    }
+    .inside-related{
+        display: grid;
+  
+        grid-template-columns: repeat(1,2fr);
+        padding: 30px 40px;
+    }
+    .related-content img{
+        height: 230px;
+    }
+    .iniside-footer{
+        padding: 30px;
+        display: block;
+    }
+    .copyright p{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .footer-content p{
+        text-align: center;
+    }
+}

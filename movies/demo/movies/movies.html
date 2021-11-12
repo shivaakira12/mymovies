@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chudu Mama</title>
+    <!---CDJNS FILE FOR FONTAWESOME ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!----------------------------------------------------------------->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Lato|Fjalla+One|Montserrat|Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="movies.css">
+</head>
+<!--header starts-->
+<body>
+<!------------------------>
+<header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo">Chudu Mama</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#genere">Genere</a>
+        <a href="#popular">Web Series</a>
+        <a href="#featured">Movies</a>
+        <a href="#reviews">Latest Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div id="login-btn">
+        <button class="btn">Login</button>
+        <i class="far fa-user"></i>
+    </div>
+</header> 
+<!------>
+<!--MOVIES SECTION-->
+<section>
+    <div class="movie-container">
+        <div class="inside-movie">
+            <div class="movie-content">
+                <div class="playbutton">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="movie-content2">
+                    <h4>NOLAN'S MASTERPIECE</h4>
+                    <h1>THE PRESTIGE</h1>
+                    <h5>Movie</h5>
+                    <div class="imdb">
+                        <h6>9.5/10 <span>IMDb</span></h6>
+                    </div>
+                    <div class="genere">
+                        <span>Action</span>
+                        <span>Drama</span>
+                        <span>Thriller</span>
+                        <span>Sci-fi</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odit atque saepe, <br>perspiciatis eos vel. Fugiat consectetur eveniet doloribus aperiam <br>
+                        excepturi ipsum saepe, asperiores labore eius, nemo sit ipsam illum.</p>
+                     <div class="btn">
+                        <a href="demo/demo.html" >Watch Movie</a>
+                        <a href="demo/demo.html" >Play Trailer</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------>
+<!--related-->
+<section>
+    <div class="related-section">
+        <h1>RELATED MOVIES</h1>
+        <div class="line"></div>
+        <div class="related-container">
+            <div class="inside-related">
+                <div class="related-content">
+                    <img src="images/upcoming/4.jpg" alt="">
+                    <img src="images/upcoming/2a.jpg" alt="">
+                    <img src="images/upcoming/8.jpg" alt="">
+                    <img src="images/upcoming/9.jpg" alt="">
+                    <img src="images/upcoming/6.jpg" alt="">
+                    <img src="images/upcoming/rrr-poster-6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------->
+<!--footer section-->
+<div class="footer" id="contact">
+    <div class="footer-container">
+        <div class="iniside-footer">
+            <div class="footer-content">
+                <div class="logo1">
+                    <a href="">Chudu Mamo</a>
+                </div>
+                <p>Chudu Mamo can have all type of <br>movies including HD,4K and BLUERAY.</p>
+                <div class="socials">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+            <div class="footer-content">
+               <h3>Languages</h3>
+               <ul>
+                   <li><a href="#">Hollywood</a></li>
+                   <li><a href="#">Bollywood</a></li>
+                   <li><a href="#">Tollywood</a></li>
+                   <li><a href="#">Kollywood</a></li>
+                   <li><a href="#">Mollywood</a></li>
+               </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Genere</h3>
+                <ul>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Sci-fi</a></li>
+                    <li><a href="#">Romantic</a></li>
+                </ul>
+             </div>
+             <div class="footer-content">
+                <div class="app">
+                    <img src="IMAGES/footer/1576133723188_applestoreimages-tab.png" alt="">
+                    <img src="IMAGES/footer/1576133824770_googleplaybadgeimages-tab.png" alt="">
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright-line"></div>
+        <p>Copyright <span>&copy; Shiva Akira,</span>,All rights Reserved.</p>
+        
+    </div>
+</div>
+<!------------------------->
+<script>
+    let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+menu.classList.toggle('fa-times');
+navbar.classList.toggle('active');
+}
+
+document.querySelector('#login-btn').onclick = () =>{
+document.querySelector('.login-form-container').classList.toggle('active');
+}
+
+document.querySelector('#close-login-form').onclick = () =>{
+document.querySelector('.login-form-container').classList.remove('active');
+}
+
+</script>
+</body>
+</html>
+<!------------------------------->
+    
