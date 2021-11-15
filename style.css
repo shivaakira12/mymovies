@@ -695,6 +695,9 @@ nav ul.show {
  }
 @media (max-width:858px)
 {
+    html{
+        overflow-x: hidden;
+    }
     .logo{
         color: #fff;
     }
